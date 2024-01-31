@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('https://images.unsplash.com/photo-1706211306828-3315e9eae057?q=80&w=2018&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat;
+    background-size: cover;
+}
+.clock{
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1), 0px 0px 20px rgba(0, 0, 0, 0.7);
+    height: 24vh;
+}
+.clock h1{
+    font-size: 3.4rem;
+    font-weight: 600;
+}
+.clock span{
+    position: relative;
+    top: -10%;
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+@media screen and (max-width:400px){
+    .clock{
+        max-width: 260px;
+    }
+    .clock h1{
+        font-size: 2.6rem;
+    }
+}
